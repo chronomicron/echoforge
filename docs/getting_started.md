@@ -1,3 +1,32 @@
+<!--
+===============================================================================
+EchoForge Getting Started
+-------------------------------------------------------------------------------
+
+File:
+    getting_started.md
+
+Purpose:
+    Introduces new users to EchoForge.
+
+    This guide explains the intended workflow, project creation, media
+    organization, pipeline execution, and general usage of the framework.
+
+    It is written from the perspective of an end user rather than a developer.
+
+Status:
+    Living User Guide
+
+Created:
+    2026-06-29
+
+License:
+    Apache License 2.0
+
+===============================================================================
+-->
+
+
 # EchoForge User Guide (Draft)
 
 > **Status:** Early design document (Version 0.1)
@@ -296,3 +325,13 @@ Future applications may include:
 EchoForge does not attempt to determine absolute truth.
 
 Instead, it gathers independent evidence, measures confidence, preserves intermediate results, and enables users to build high-quality datasets through reproducible, transparent processing pipelines.
+
+Maintainer:
+    EchoForge Contributors
+
+Repository:
+    https://github.com/chronomicron/echoforge
+
+This document is part of the EchoForge project and should be kept in
+sync with the implementation whenever possible.
+

@@ -1,3 +1,34 @@
+<!--
+===============================================================================
+EchoForge Architecture
+-------------------------------------------------------------------------------
+
+File:
+    architecture.md
+
+Purpose:
+    Defines the long-term architectural vision of EchoForge.
+
+    This document describes the overall system design, guiding principles,
+    project philosophy, core concepts, plugin architecture, and high-level
+    framework organization.
+
+    It serves as the primary technical reference for contributors when making
+    architectural decisions.
+
+Status:
+    Living Design Document
+
+Created:
+    2026-06-29
+
+License:
+    Apache License 2.0
+
+===============================================================================
+-->
+
+
 # EchoForge Architecture
 
 > **Status:** Design Document (Draft)
@@ -375,3 +406,12 @@ EchoForge is designed to remain tool-agnostic.
 As new AI models become available, contributors should be able to replace or improve individual plugins without modifying the core framework.
 
 The framework itself—not any individual AI model—is the long-term product.
+
+Maintainer:
+    EchoForge Contributors
+
+Repository:
+    https://github.com/chronomicron/echoforge
+
+This document is part of the EchoForge project and should be kept in
+sync with the implementation whenever possible.
