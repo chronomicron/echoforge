@@ -1,2 +1,2 @@
 # echoforge
-EchoForge is an open-source framework for extracting high-quality speech datasets from audiovisual media.
+EchoForge is an open-source framework for discovering, extracting, conditioning, and organizing media artifacts centered on a target individual from audiovisual recordings. By combining evidence from multiple analysis methods and preserving every stage of processing, EchoForge produces reproducible, high-quality datasets for speech, video, and multimodal machine learning applications.

@@ -75,7 +75,13 @@ Commercial APIs may optionally be configured by users but are never required.
 
 Original media is never modified.
 
-Intermediate processing results are never discarded.
+Intermediate artifacts are never discarded.
+
+Whenever a processing stage produces a new artifact, it becomes a child
+of its parent artifact.
+
+Every artifact retains complete provenance, allowing the entire
+processing history to be reconstructed at any time.
 
 Metadata should always be preserved whenever practical.
 
@@ -115,6 +121,19 @@ Automation is preferred.
 Human interaction is optional.
 
 When user input is requested, EchoForge should ask only those questions that provide the greatest improvement to the overall confidence of the dataset.
+
+---
+
+## Measure Every Transformation
+
+Every processing stage should, whenever practical, quantify the effect of its work.
+
+Plugins should record objective metrics before and after processing,
+allowing EchoForge to compare algorithms, evaluate improvements,
+and make reproducible decisions throughout the pipeline.
+
+Whenever possible, plugins should justify why a transformation was
+performed rather than simply recording that it occurred.
 
 ---
 
@@ -312,7 +331,7 @@ Source Media
 
 ↓
 
-Index
+Discovery
 
 ↓
 
@@ -320,11 +339,11 @@ Evidence Generation
 
 ↓
 
-Evidence Fusion
+Human Review (Optional)
 
 ↓
 
-Human Review (Optional)
+Evidence Fusion
 
 ↓
 
@@ -332,7 +351,19 @@ Artifact Extraction
 
 ↓
 
+Conditioning
+
+↓
+
+Quality Control
+
+↓
+
 Dataset Export
+
+
+
+
 ```
 
 Future versions may allow custom pipeline definitions through configuration files.
