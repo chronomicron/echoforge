@@ -85,8 +85,23 @@ Generate Artifacts
 
 ↓
 
-Append Metadata
+Initialize
 
+↓
+
+Validate
+
+↓
+
+Execute
+
+↓
+
+Publish Events
+
+↓
+
+Return PluginResult
 ↓
 
 Report Status
@@ -106,42 +121,8 @@ Plugins are responsible only for their own task.
 
 Every plugin receives the following objects from the framework.
 
-## Project
+## ExecutionContext
 
-Contains:
-
-* project configuration
-* database connection
-* workspace paths
-* logging
-* project settings
-
----
-
-## Target
-
-Describes the individual being searched for.
-
-May include:
-
-* display name
-* aliases
-* reference images
-* reference audio
-* user hints
-* plugin-specific hints
-
----
-
-## Resources
-
-Resources may include:
-
-* Media
-* Artifacts
-* Segments
-* Evidence
-* Metadata
 
 Plugins consume only the resources required for their task.
 

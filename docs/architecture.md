@@ -137,42 +137,53 @@ performed rather than simply recording that it occurred.
 
 ---
 
+## Separation of Responsibilities
+
+The EchoForge Engine manages projects, scheduling, persistence, provenance, and execution.
+
+Plugins perform computation only.
+
+Plugins do not communicate directly with one another and do not manage project storage.
+
+---
+
 # High-Level Architecture
 
-```text
-                 Project
+```                     EchoForge Engine
 
-                    │
+                             │
 
-                    ▼
+              Pipeline Orchestrator
 
-             SQLite Database
+                             │
 
-                    │
+               Job Scheduler / Event Bus
 
-     ┌──────────────┼──────────────┐
+        ┌─────────────┼─────────────┐
 
-     ▼              ▼              ▼
+        ▼             ▼             ▼
 
- Video         Audio         Transcript
+   Plugin A      Plugin B      Plugin C
 
-     ▼              ▼              ▼
+        │             │             │
 
- Evidence     Evidence      Evidence
+        └─────────────┼─────────────┘
 
-      └─────────────┬─────────────┘
+                      ▼
 
-                    ▼
+                Plugin Results
 
-           Evidence Fusion Engine
+                      ▼
 
-                    ▼
+              Project Data Model
 
-             Candidate Artifacts
+      ├── Database
 
-                    ▼
+      ├── Metadata
 
-             Dataset Exporters
+      ├── Artifacts
+
+      └── Evidence
 ```
 
 ---

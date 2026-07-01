@@ -26,6 +26,38 @@ License:
 ===============================================================================
 -->
 
+v0.1
+
+Core Framework
+
+Engine
+Project
+Context
+PluginResult
+Plugin Interface
+Event System
+
+No AI.
+
+No FFmpeg.
+
+Just architecture.
+
+v0.2
+
+Media Discovery
+
+v0.3
+
+Subtitle Plugin
+
+v0.4
+
+Audio Plugin
+
+v0.5
+
+Video Plugin
 
 
 Maintainer:

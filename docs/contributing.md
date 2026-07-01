@@ -38,3 +38,14 @@ Repository:
 
 This document is part of the EchoForge project and should be kept in
 sync with the implementation whenever possible.
+
+Plugin Rule #1
+
+Plugins must not
+
+modify project metadata
+call other plugins
+create project directories
+write database records
+
+They only compute.

@@ -243,6 +243,27 @@ Quality assessment should never replace the original metrics.
 
 ---
 
+## ExecutionContext
+
+Target
+Resource
+Configuration
+Logger
+Shared Cache
+
+---
+
+## PluginResult
+
+Artifacts
+Evidence
+Metrics
+Warnings
+Errors
+Events
+
+---
+
 # Artifact Lineage
 
 Artifacts form a directed tree.
@@ -285,7 +306,9 @@ Nothing is deleted.
 
 Every artifact maintains its own metadata.
 
-Plugins append information to the metadata.
+Plugins return structured results.
+
+The EchoForge Engine is responsible for persisting artifacts, updating metadata, maintaining provenance, and recording processing history.
 
 Plugins should never modify metadata produced by previous plugins.
 

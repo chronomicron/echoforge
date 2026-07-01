@@ -59,6 +59,9 @@ Whenever practical, EchoForge should favor:
 Commercial APIs may be supported as optional plugins but should never be
 required to use the framework.
 
+EchoForge plugins invoke these technologies.
+The EchoForge Engine remains independent of any individual AI model or library.
+
 ---
 
 # Stage 1 — Media Decomposition

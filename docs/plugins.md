@@ -37,3 +37,30 @@ Repository:
 
 This document is part of the EchoForge project and should be kept in
 sync with the implementation whenever possible.
+
+How to write a plugin
+
+↓
+
+Plugin lifecycle
+
+↓
+
+ExecutionContext
+
+↓
+
+PluginResult
+
+↓
+
+Publishing Events
+
+↓
+
+Returning Artifacts
+
+↓
+
+Testing
+
